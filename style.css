@@ -7,6 +7,7 @@ html,
 body {
   width: 100%;
   height: 100%;
+  font-family: "Poppins", sans-serif;
 }
 .head {
   display: flex;
@@ -14,13 +15,13 @@ body {
   align-items: center;
   background-color: #222;
   padding: 1rem 2rem;
-  background-color: rgb(159, 159, 172);
+  /* font-family: "Poppins", sans-serif; */
 }
 
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: rgb(175, 27, 27);
+  color: rgb(243, 239, 239);
 }
 
 .nav-menu {
@@ -66,12 +67,13 @@ body {
 #text-div {
   position: absolute;
   font-size: 3rem;
-  left: 9%;
+  left: 11%;
   top: 25%;
+  /* font-family: "Poppins", sans-serif; */
 }
 #text-div > .btn {
   padding: 12px 24px;
-  background-color: rgb(139, 194, 194);
+  background-color: rgb(3, 8, 1);
   color: #f1e7e7;
   border: none;
   border-radius: 8px;
@@ -82,8 +84,8 @@ body {
 }
 
 #text-div > .btn:hover {
+  background-color: rgb(139, 194, 194);
   color: #f4f5f3;
-  background-color: rgb(3, 8, 1);
 }
 #text-div > .btn:active {
   transform: scale(0.98);
@@ -91,7 +93,6 @@ body {
 
 #text-div > p {
   font-size: 1.5rem;
-  /* font-family: "Courier New", Courier, monospace; */
 }
 #section-img-container {
   /* background-color: yellowgreen; */
@@ -101,7 +102,7 @@ body {
 .section-img {
   position: absolute;
   top: 18%;
-  right: 1%;
+  right: 2%;
   width: 600px;
   height: 600px;
   background-image: url(https://images.unsplash.com/photo-1709285246426-80c8180ee7f2?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
