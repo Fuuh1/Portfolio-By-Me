@@ -9,6 +9,8 @@ body {
   height: 100%;
   font-family: "Poppins", sans-serif;
 }
+
+/*Main page*/
 .head {
   display: flex;
   justify-content: space-between;
@@ -71,6 +73,7 @@ body {
   top: 25%;
   /* font-family: "Poppins", sans-serif; */
 }
+
 #text-div > .btn {
   padding: 12px 24px;
   background-color: rgb(3, 8, 1);
@@ -82,9 +85,25 @@ body {
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
+/* Button & h1  Animation */
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
 
+#text-div .btn,
+h1 {
+  animation: bounce 1.5s infinite;
+}
+
+/*On Hover*/
 #text-div > .btn:hover {
-  background-color: rgb(139, 194, 194);
+  background-color: rgb(68, 80, 80);
   color: #f4f5f3;
 }
 #text-div > .btn:active {
@@ -112,4 +131,30 @@ body {
   border-radius: 50%;
   /* border-top-right-radius: 50%;
   border-bottom-left-radius: 50%; */
+}
+
+/*Skills Section*/
+
+#skills > h1 {
+  padding-top: 12rem;
+  padding-bottom: 3rem;
+  text-align: center;
+  font-size: 5rem;
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.skill-item {
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+.skill-item p {
+  font-size: 1.8rem;
 }
