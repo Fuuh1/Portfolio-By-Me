@@ -155,6 +155,56 @@ h1 {
   margin-bottom: 0.5rem;
   color: var(--primary-color);
 }
+.skill-item:hover {
+  transform: translateY(-6px);
+}
 .skill-item p {
   font-size: 1.8rem;
+}
+
+.skill-bar {
+  position: relative;
+  width: 100%;
+  height: 8px;
+  background: #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+.skill-progress {
+  height: 100%;
+  /* width: 30%; */
+  background: #000;
+  transition: width 0.8s ease-in-out;
+}
+
+/*For Bar percentage*/
+.a {
+  width: 95%;
+  background-color: #000;
+}
+
+.b {
+  width: 90%;
+  background-color: #000;
+}
+
+.c {
+  width: 85%;
+  background-color: #000;
+}
+
+.d {
+  width: 70%;
+  background-color: #000;
+}
+
+.e {
+  width: 93%;
+  background-color: #000;
+}
+
+.f {
+  width: 93%;
+  background-color: #000;
 }
